@@ -1,24 +1,8 @@
 {
-  "name": "THE-TECH-BLOG",
+  "name": "the-tech-blog",
   "version": "1.0.0",
-  "description": " CMS-style blog sit",
+  "description": "",
   "main": "server.js",
-  "scripts": {
-    "test": "test",
-    "start": "node server.js",
-    "seed": "node seeds/index.js",
-    "dev": "nodemon index"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Majid-pkz/Tech-Blog.git"
-  },
-  "author": "Majid",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Majid-pkz/Tech-Blog/issues"
-  },
-  "homepage": "https://github.com/Majid-pkz/Tech-Blog#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "connect-session-sequelize": "^7.1.5",
@@ -31,7 +15,14 @@
     "mysql2": "^3.2.0",
     "sequelize": "^6.29.2"
   },
+
   "devDependencies": {
-    "nodemon": "^2.0.21"
-  }
+    
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
 }
