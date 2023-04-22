@@ -1,0 +1,26 @@
+<nav id="second-nav" class="navbar navbar-expand-lg bg-secondary">
+  <div class="container-fluid ">              
+
+ <p class="shadow-box" id="nav-box">The Tech Blog</p>
+
+  </div>
+   
+</nav> 
+
+{{#each existingPost as |e|}}
+<div  class="card card-length">
+  <div class=" text-bg-dark ">
+    <div class="d-flex justify-content-between w-100" >
+       <a class="text-decoration-none" href="/posts/{{e.id}}"> <h5 class="card-header text-bg-dark">{{e.title}}  </h5> </a>
+       <p class="creator-p" > <span>posted by: {{e.user.username}} {{ formatDate e.createdAt}}  </span> 
+       </p>
+     
+    </div>
+  </div>
+  <div class="card-body text-bg-success p-3">    
+    <p class="card-text ">{{e.content}} .</p>
+  </div>
+</div>
+{{/each}}
+
+

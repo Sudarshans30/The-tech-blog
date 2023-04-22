@@ -1,0 +1,36 @@
+
+<nav id="second-nav" class="navbar navbar-expand-lg bg-secondary">
+  <div class="container-fluid ">              
+
+ <p class="shadow-box" id="nav-box">Your Dashboard</p>
+
+  </div>
+   
+</nav> 
+
+
+
+
+{{#each myPosts as |e|}}
+<div class="card">
+  <div class="bg-warning">
+    <div class="d-flex justify-content-between w-100" >
+      <a class="text-decoration-none" href="/api/edit/{{e.id}}">  <h5 class="card-header ">{{e.title}}  </h5> </a>
+       
+        
+        <p > <span>posted by: {{e.user.username}} {{ formatDate e.createdAt}}  </span> </p>
+        
+         
+    </div>
+  </div>
+  <div class="card-body bg-info">    
+    <p class="card-text">{{e.content}} .</p>
+  </div>
+</div>
+{{/each}}
+<div class="line-space d-flex justify-content-center">
+   <a href="/api/dashboard/newpost" class="btn btn-lg btn-primary ">+ New Post</a>
+</div>
+
+
+{{!-- <script src="./js/newpost.js"></script> --}}
