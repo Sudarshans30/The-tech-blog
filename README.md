@@ -14,15 +14,15 @@ CMS-style blog site where developers can publish their blog posts and comment on
 
 
 ## Installation
-Clone the repository and run an integrated terminal.
-Enter 'npm i' to download and install the required dependencies.
-Create .env file and add:
-DB_NAME='techBlog_db'
-DB_PASSWORD='INSERT YOUR SQL PASSWORD'
-DB_USER='root'
-Open an integrated terminal and enter mysql -u root -p, enter password to start MySQL.
-Enter source db/schema.sql to create the database.
-Enter node seeds/index.js to create the example data.
+* Clone the repository and run an integrated terminal.
+* Enter 'npm i' to download and install the required dependencies.
+* Create .env file and add:
+* DB_NAME='techBlog_db'
+* DB_PASSWORD='INSERT YOUR SQL PASSWORD'
+* DB_USER='root'
+* Open an integrated terminal and enter mysql -u root -p, enter password to start MySQL.
+* Enter source db/schema.sql to create the database.
+* Enter node seeds/index.js to create the example data.
 
 ## contributing
 Sudarshan
